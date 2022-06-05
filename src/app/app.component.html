@@ -1,0 +1,13 @@
+<div>
+  <span class="sonphan1">Hello World !</span>
+  <br />
+  <span (click)="changeName('Huy')" style="cursor: pointer" title="Hahaha">
+    {{ title }} {{ name }}
+  </span>
+  <br />
+  <button (click)="changeName('Diệu')" title="Nhấn vào đi cha nội">
+    Nhấn vào tui
+  </button>
+  <br />
+  <app-home *ngIf="name === 'Diệu'"></app-home>
+</div>
